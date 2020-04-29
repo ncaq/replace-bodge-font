@@ -1,0 +1,14 @@
+/* GitHubのArialを変更するとレイアウトが崩れてしまうためGitHubは設定しない */
+@-moz-document regexp("^(?!https://github.com).*") {
+  @font-face {
+    font-family: "Arial";
+    font-weight: normal;
+    src: local("sans-serif");
+  }
+
+  @font-face {
+    font-family: "Arial";
+    font-weight: bold;
+    src: local("sans-serif");
+  }
+}
