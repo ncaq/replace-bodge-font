@@ -1,0 +1,15 @@
+@mixin sans-serif($name) {
+  @font-face {
+    font-family: quote($name);
+    font-weight: normal;
+    src: local("sans-serif");
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-weight: bold;
+    src: local("sans-serif");
+  }
+}
+
+@include sans-serif("Arial");
