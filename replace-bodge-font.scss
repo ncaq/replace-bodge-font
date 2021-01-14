@@ -12,6 +12,23 @@
   }
 }
 
+@mixin monospace($name) {
+  @font-face {
+    font-family: quote($name);
+    font-weight: normal;
+    src: local("monospace");
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-weight: bold;
+    src: local("monospace");
+  }
+}
+
 @include sans-serif("Arial");
 @include sans-serif("MS PGothic");
 @include sans-serif("ＭＳ Ｐゴシック");
+
+@include monospace("MS Gothic");
+@include monospace("ＭＳ ゴシック");
