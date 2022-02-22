@@ -8,6 +8,6 @@
     "build": "sass --style=compressed --no-source-map replace-bodge-font.scss replace-bodge-font.css"
   },
   "devDependencies": {
-    "sass": "^1.32.4"
+    "sass": "^1.49.8"
   }
 }
