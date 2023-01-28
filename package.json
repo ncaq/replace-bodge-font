@@ -1,11 +1,11 @@
 {
   "name": "replace-bodge-font",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "repository": "https://github.com/ncaq/replace-bodge-font.git",
   "author": "ncaq <ncaq@ncaq.net>",
   "license": "MIT",
   "scripts": {
-    "build": "sass --style=compressed --no-source-map replace-bodge-font.scss replace-bodge-font.css"
+    "build": "sass --no-source-map replace-bodge-font.scss replace-bodge-font.css"
   },
   "devDependencies": {
     "sass": "^1.49.8"

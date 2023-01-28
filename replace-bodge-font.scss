@@ -1,3 +1,11 @@
+/* ==UserStyle==
+@name      replace-bodge-font
+@namespace https://www.ncaq.net/
+@author    ncaq
+@version   1.0.0
+@license   MIT
+==/UserStyle== */
+
 @mixin sans-serif($name) {
   @font-face {
     font-family: quote($name);
@@ -26,9 +34,12 @@
   }
 }
 
-@include sans-serif("Arial");
-@include sans-serif("MS PGothic");
-@include sans-serif("ＭＳ Ｐゴシック");
+@-moz-document url-prefix("http://"), url-prefix("https://")
+{
+  @include sans-serif("Arial");
+  @include sans-serif("MS PGothic");
+  @include sans-serif("ＭＳ Ｐゴシック");
 
-@include monospace("MS Gothic");
-@include monospace("ＭＳ ゴシック");
+  @include monospace("MS Gothic");
+  @include monospace("ＭＳ ゴシック");
+}
